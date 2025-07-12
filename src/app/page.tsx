@@ -1,10 +1,10 @@
+import DateTime from '../components/DateTime';
 import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        Snippet
+          <DateTime/>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -19,7 +19,6 @@ export default function Home() {
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               src/app/page.tsx
             </code>
-            .
           </li>
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
@@ -66,7 +65,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          A
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -81,7 +80,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          B
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -96,7 +95,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          C
         </a>
       </footer>
     </div>
